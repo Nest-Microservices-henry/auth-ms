@@ -23,8 +23,9 @@ async function bootstrap() {
       forbidNonWhitelisted: true,
     }),
   );
+  console.log('AuthMS testing log  ')
   await app.listen();
-  logger.log(`Products microservices running in port ${envs.port}`);
+  logger.log(`Auth microservices running in port ${envs.port}`);
 }
 bootstrap();
 
